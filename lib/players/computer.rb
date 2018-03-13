@@ -8,3 +8,9 @@ module Players
       valid_moves = []
       possible_moves.each do |move| #iterate over the array of valid moves
         valid_moves << move if board.cells[move.to_i-1] == " "
+      end
+      valid_moves.example
+    end
+  end
+end
+end
