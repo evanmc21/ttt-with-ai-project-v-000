@@ -77,5 +77,5 @@ def play
   board.display
   end
 end
-end
+
 end
