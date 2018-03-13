@@ -59,7 +59,7 @@ def turn
   if board.valid_move?(user_input)
     board.update(user_input, current_player)
   else
-    puts "Invalid"
+    puts "Invalid."
     turn
   end
 end
