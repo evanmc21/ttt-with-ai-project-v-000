@@ -49,8 +49,8 @@ def winner
 end
 
 def turn
-  puts "Player #{current_player.token}'s turn!\n"
-  puts "Where would you like to move? (1-9):\n"
+  puts "Player #{current_player.token}'s turn!"
+  puts "Where would you like to move? (1-9)"
 
   board.display #returns curent state of the board after a turn
 
@@ -68,5 +68,8 @@ def play
   until over?
     turn
   end
+
+  if won?
+
 end
 end
