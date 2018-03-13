@@ -62,5 +62,5 @@ def turn
     puts "Invalid"
     turn
   end
-
+end
 end
