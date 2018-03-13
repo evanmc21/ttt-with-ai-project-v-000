@@ -42,4 +42,8 @@ def draw?
   !won? && board.full ? true : false
 end
 
+def winner
+  if winner = won?
+    board.cells[winner.first]
+
 end
