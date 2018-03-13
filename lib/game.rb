@@ -63,4 +63,9 @@ def turn
     turn
   end
 end
+
+def play
+  until over?
+    turn
+  end
 end
