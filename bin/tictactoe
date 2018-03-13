@@ -4,9 +4,9 @@ require_relative '../config/environment'
 
 puts "Welcome to the magical game of Tic Tac Toe!"
 puts "You are Player 1, using the token X."
-play = gets.strip
 game = Game.new
 until game.won?
+  play = gets.strip
   game.play
 end
 
