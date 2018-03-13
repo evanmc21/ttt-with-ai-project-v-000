@@ -75,8 +75,7 @@ def play
     puts "Cat's Game!"
   end
   board.display
+  end
 end
-
-
 end
 end
