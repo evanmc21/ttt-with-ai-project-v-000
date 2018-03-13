@@ -29,9 +29,9 @@ class Game
 
   def won?
     WIN_COMBINATIONS.each {|win_combo|
-    index0 = board.cells[win_combo[0]]
-    index1 = board.cells[win_combo[1]]
-    index2 = board.cells[win_combo[2]]
+    space_1 = board.cells[win_combo[0]]
+    space_2 = board.cells[win_combo[1]]
+    space_3 = board.cells[win_combo[2]]
 
     return win_combo if ((index0 == "X" && index1 == "X" && index2 == "X") || (index0 == "O" && index1 == "O" && index2 == "O"))
     }
