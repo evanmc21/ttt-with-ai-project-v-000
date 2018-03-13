@@ -69,7 +69,7 @@ def play
     turn
   end
 
-  if won?
+
 
 end
 end
