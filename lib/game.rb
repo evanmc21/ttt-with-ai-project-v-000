@@ -61,7 +61,6 @@ def turn
   else
     puts "Sorry, Beyonce, but that character is invalid."
     turn
-  end
 end
 
 def play
