@@ -68,6 +68,7 @@ def play
   until over?
     turn
   end
+
   if won?
     puts "Congratulations #{winner}!"
   elsif draw?
@@ -76,7 +77,7 @@ def play
   board.display
   end
 end
-end
+
 end
 
 end
