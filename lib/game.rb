@@ -33,7 +33,7 @@ class Game
     space_2 = board.cells[win_combo[1]]
     space_3 = board.cells[win_combo[2]]
 
-    return win_combo if ((index0 == "X" && index1 == "X" && index2 == "X") || (index0 == "O" && index1 == "O" && index2 == "O"))
+    return win_combo if ((space_1 == "X" && space_2 == "X" && space_3 == "X") || (space_1 == "O" && space_2 == "O" && index2 == "O"))
     }
     return false
 end
