@@ -5,6 +5,7 @@ module Players
       "1"
     elsif board.cells.count{|cell| cell != " "} == 1
       board.cells.detect("X") == 4 ? "5" : "1"
+    else
 
       possible_moves = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
       valid_moves = []
