@@ -1,0 +1,7 @@
+module Players
+  class Computer < Player
+  def move(board)
+    if board.cells.count{|cell| cell != " "} == 0
+      "1"
+    elsif board.cells.count{|cell| cell != " "} == 1
+      possible_moves = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
