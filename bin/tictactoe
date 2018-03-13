@@ -9,7 +9,7 @@ until game.won?
   game.play
 end
 
-play_again = ""
+play_again = " "
 until play_again.downcase == "n" || play_again.downcase == "no"
   puts "Wanna be extra and play again?"
   play_again = gets.strip
