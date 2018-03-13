@@ -27,15 +27,18 @@ class Game
      draw? || won? ? true : false
   end
 
-  def won?
-    WIN_COMBINATIONS.each {|win_combo|
-    space_1 = board.cells[win_combo[0]]
-    space_2 = board.cells[win_combo[1]]
-    space_3 = board.cells[win_combo[2]]
-
-    return win_combo if ((space_1 == "X" && space_2 == "X" && space_3 == "X") || (space_1 == "O" && space_2 == "O" && space_3 == "O"))
-    }
-    return false
+def won?
+  winning_combo = nil
+  WIN_COMBINATIONS.each do |combo|
+    specific_combo = []
+    combo.each do |space|
+      specific_combo << board.cells[space]
+    if specific_combo == ["X","X","X"] || specific_combo == ["O","O","O"]
+      winning_combo = combo
+    end
+  end
+end
+  winning_combo
 end
 
 def draw?
